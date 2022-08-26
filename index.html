@@ -1,29 +1,84 @@
+<!--HTML5 is the best way to render and will add future support if email clients elect to do so  -->
 <!DOCTYPE html>
+<!-- This helps assistive tech render glhphs, quotes,hpehns and spaces correctly -->
 <html lang="en">
 
 <head>
+    <!--Email Clients don't display title. However, emails can be viewed as webpages this happens often  -->
+    <title>Ampscript Sender Name | Subject line</title>
+    <!-- Universal Character Set Transformation Format 8 bit. -->
     <meta charset="UTF-8">
+    <!-- lets email adapt to the width of the device itself -->
+    <meta name="viewport" content="width=device-width, initial-
+scale=1">
+    <!-- Makes Microsoft devices and clients compatable -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Preston Jay</title>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="css/style.css">
-    <script defer src="js/app.js"></script>
+    <style type="text/css">
+        /* CLIENT-SPECIFIC STYLES */
+        body,
+        table,
+        td,
+        a {
+            -webkit-text-size-adjust: 100%;
+            -ms-text-size-adjust: 100%;
+        }
+
+        table,
+        td {
+            mso-table-lspace: 0pt;
+            mso-table-rspace: 0pt;
+        }
+
+        img {
+            -ms-interpolation-mode: bicubic;
+        }
+
+        /* RESET STYLES */
+        img {
+            border: 0;
+            height: auto;
+            line-height: 100%;
+            outline: none;
+            text-decoration: none;
+        }
+
+        table {
+            border-collapse: collapse !important;
+        }
+
+        body {
+            height: 100% !important;
+            margin: 0 !important;
+            padding: 0 !important;
+            width: 100% !important;
+        }
+    </style>
 </head>
+<!-- Inline CSS ensure that no email clients add extra white space around our campaigns. -->
 
-<body>
-    <header>
-        <nav>
+<body style="margin: 0 !important; padding: 0 !important;">
+    <!-- This will have the text pull into preview text of most email clients. That is the text bellow then sender and subject line -->
 
-        </nav>
-    </header>
-    <main>
-        <h1>Preston Jay</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, vero.</p>
-    </main>
-    <footer>
+    <!-- This works because most clients take the first bit of text to display -->
 
-    </footer>
+    <!-- This is magic not a lot of email devs do this -->
+
+    <div style="display: none; max-height: 0; overflow: hidden;">
+        Preview text message goes here
+    </div>
+
+    <!-- This is to create white space to have short message and grab users attention -->
+
+    <div style="display: none; max-height: 0; overflow: hidden;">
+        &nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;
+    </div>
+
+    <!-- If presentation or none is applied to a <table> element, the descendant <caption>, <thead>, <tbody>, <tfoot>, <tr>, <th>, and <td> elements inherit the role and are thus not exposed to assistive technologies. But, elements inside of the <th> and <td> elements, including nested tables, are exposed to assistive technologies. -->
+
+    <!-- This is why you use role attribute https://emailgeekscommunity.com/articles/role-presentation-table-accessibility -->
+
+    <table border="0" cellpadding="0" cellspacing="0" width="100%"
+    role="presentation" role='presentation'></table>
 </body>
 
 </html>
